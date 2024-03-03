@@ -13,23 +13,21 @@ int main(int argc, char const *argv[])
     fillArray(numbers, 200);
     for (int i = 0; i < 200; i++)
     {
-        if(numbers[i]%5 != 0 && numbers[i]%7 != 0)
-        {
-            printf("%d \n", numbers[i]);
-        }
-        if (numbers[i]%5 == 0 && numbers[i]%7 == 0)
+        if (numbers[i] % 5 == 0 && numbers[i] % 7 == 0)
         {
             printf("FooBar\n");
-            continue;
         }
-        if (numbers[i]%5 == 0)
+        else if (numbers[i] % 5 == 0)
         {
             printf("Foo\n");
-            continue;
         }
-        if (numbers[i]%7 == 0)
+        else if (numbers[i] % 7 == 0)
         {
             printf("Bar\n");
+        }
+        else
+        {
+            printf("%d\n", numbers[i]); 
         }
     }
     
