@@ -8,10 +8,10 @@ int silnia(int n) {
 
 int obliczSilnie(int array[], int size)
 {
-    for (int i = 0; i<sizeof(array); i++)
+    for (int i = 0; i<size; i++)
     {
-        silnia(array[i]);
-        printf("%d! = %d \n", silnia, array[i]);
+        int result = silnia(array[i]);
+        printf("%d! = %d \n", array[i], result);
     }
 }
 
