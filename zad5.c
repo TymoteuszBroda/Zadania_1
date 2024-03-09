@@ -1,18 +1,17 @@
 #include <stdio.h>
-//will read user input as number to check
-int main()
-{   int number=0, sum=0;
-    printf("Podaj liczbe: \n");
-    scanf("%d", &number);
 
-    if (number<=0)
+int main()
+{   int n=0, sum=0;
+    printf("Podaj liczbe: \n");
+    scanf("%d", &n);
+    if (n<=0)
     {
         printf("\nSuma wynosi:%d, liczba była ujemna lub równa zeru=.", sum,"\n");
         return 0;
     }
 
 
-    for (int i=1; i < number; i++)
+    for (int i=1; i < n; i++)
     {
         if(i%3==0 || i%5==0)
         {
